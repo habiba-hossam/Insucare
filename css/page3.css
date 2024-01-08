@@ -1,0 +1,163 @@
+.page3 {
+    position: relative;
+    padding: 7% 0 0 0;
+    opacity: 0;
+    display:none;
+    flex-wrap: wrap;
+}
+
+.child{
+    margin-left: 2%;
+    width: 95vw;
+    height: 60vh;
+
+}
+.story{
+    font-size: 200%;
+    font-weight: 500;
+
+}
+
+.info-under-about{
+    background-color: #00B2F5;
+    height: 6px;
+    width: 50px;
+    margin-left: 0.5%;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+.contact-under-about{
+    background-color: #00B2F5;
+    height: 6px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+
+.under-container-about{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 2%;
+    margin-left: 7%;
+}
+.card-story1{
+    margin-top: 5%;
+    display: grid;
+    gap: 0; 
+    align-items:center;
+    grid-template-areas: 
+    'img-side  text-side text-side';
+}
+
+.card-stroy1 .right-img {grid-area: img-side;}
+.card-stroy1 .left-txt {grid-area: text-side;}
+.card-stroy1 .right-txt {grid-area: img-side;}
+.card-stroy1 .left-img {grid-area: text-side;}
+
+.right-img{
+    width: 50%;
+    border-radius: 50%;
+    align-self: center;
+    margin-left: 30%;
+    border: 10px solid #00B2F5;
+    opacity: 0;
+
+ }
+ .right-img.active{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: zoomIn;
+    opacity: 1;
+
+ }
+ .left-txt{
+    display: inline-block;
+    margin-right: 15%;
+    font-size: 150%;
+    font-weight: 300;
+    text-align: left;
+    opacity: 0;
+  
+ }
+ .left-txt.active{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    opacity: 1;
+
+ }
+ 
+ .left-img{
+    width: 50%;
+    border-radius: 50%;
+    align-self: center;
+    border: 10px solid #00B2F5;
+    opacity: 0;
+ }
+ .left-img.active{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: zoomIn;
+    opacity: 1;
+}
+ .right-txt{
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: 10%;
+    font-size: 150%;
+    font-weight: 300;
+    text-align: left;
+    opacity: 0;
+ }
+ .right-txt.active{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    opacity: 1;
+ }
+
+ @media only screen and (max-width: 450px) {
+    .child{
+        height: 30vh;
+    }    
+    .under-container-about{
+        justify-content: center;
+    }
+    .card-story1{
+        padding: 10%;
+        grid-template-areas: 
+        'img-side'
+        'text-side';
+    }
+
+    .card-stroy1 .left-img {grid-area: img-side;}
+    .card-stroy1 .right-txt {grid-area: text-side;}
+
+    .right-img{
+        margin: 0 0 2vh 20vw;    
+     }
+     .left-txt{
+        margin-right: 0;
+        font-size: 110%;
+        text-align: center;      
+     }
+     
+     .left-img{
+        margin: 0 0 2vh 20vw;  
+        position: relative;
+        bottom: 25vh;  
+     }
+     .right-txt{
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 110%;
+        text-align: center;
+        position: relative; 
+        top: 20vh;
+     }
+
+
+ }

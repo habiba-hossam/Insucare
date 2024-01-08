@@ -1,0 +1,144 @@
+.salad {
+    opacity: 1;
+    width: 100%;
+    display: block;
+    margin-bottom: 5%;
+    z-index: 1;
+}
+
+.salad-div {
+    overflow: hidden;
+    width: 100%;
+    height: 85vh;
+}
+
+.page7 .part1 {
+    display: table-row;
+    flex-basis: 100%;
+}
+
+.page7 .part2 {
+    display: table-row;
+    width: 100%;
+}
+
+.page7 {
+    position: relative;
+    background-color: white;
+    opacity: 0;
+    display: none;
+    padding-top: 7%;
+}
+
+.quote {
+    z-index: 10;
+    position: absolute;
+    display: inline-block;
+    left: 55%;
+    margin-top: 10%;
+    top: 10%;
+}
+
+.text-quote {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 300%;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.steps {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 5vw;
+    grid-template-areas:
+        'step11 step12 step13 ';
+}
+
+.step11 {
+    grid-area: step11;
+}
+
+.step12 {
+    grid-area: step12;
+}
+
+.step13 {
+    grid-area: step13;
+}
+
+.step-img {
+    width: 8vw;
+}
+
+.subtitle {
+    font-size: 230%;
+    font-weight: 900;
+}
+
+.title_p7 {
+    text-align: center;
+    font-size: 300%;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 5vh;
+}
+
+.step1 {
+    text-align: center;
+    padding: 0 5vw 5vh 5vw;
+    height: 30vh;
+}
+
+.brief {
+    font-size: 130%;
+    font-weight: 300;
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    .quote {
+        top: 2%;
+    }
+
+    .text-quote {
+        font-size: 120%;
+    }
+
+    .salad-div {
+        height: 30vh;
+        width: 100vw;
+    }
+
+    .subtitle {
+        font-size: 170%;
+    }
+
+    .title_p7 {
+        font-size: 250%;
+    }
+
+    .steps {
+        display: grid;
+        grid-template-areas:
+            'step11'
+            'step12'
+            'step13';
+    }
+    .step1 {
+        padding: 0 15vw 10vh 15vw;
+        height: 20vh;
+    }
+    .step-img {
+        width: 20vw;
+    }
+    .brief {
+        font-size: 130%;
+        font-weight: 300;
+    }
+
+}
