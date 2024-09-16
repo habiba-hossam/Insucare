@@ -34,7 +34,6 @@
     display: inline-block;
     animation-delay: 1s;
     align-self: center;
-    /* margin-right: 20%; */
 
 }
 
@@ -51,14 +50,13 @@
     justify-content:space-around;
     align-items: center;
     margin-top: 5%;
+    padding-left: 15%;
     grid-template-areas:
-    'mssg-card1 mssg-card2 mssg-card3';
+    'mssg-card2 mssg-card3';
 }
 
-.mssg-card1 {grid-area: mssg-card1;}
 .mssg-card2 {grid-area: mssg-card2;}
 .mssg-card3 {grid-area: mssg-card3;}
-.mssg-card1,
 .mssg-card2,
 .mssg-card3{
     height: 40vh;
@@ -69,8 +67,9 @@
 }
 .mssg-card3{
     animation-delay: 1s;
+    width: 68%;
+    /* margin-left: 10%; */
 }
-.mssg-card1.active,
 .mssg-card2.active,
 .mssg-card3.active{
     animation-duration: 1s;
@@ -90,6 +89,10 @@
 }
 .comm-logo{
     width: 10%;
+    
+}
+.social-media{
+    display: inline-block;
 }
 .info1 ,
 .info2{
@@ -251,7 +254,7 @@ font-size: 150%;
     }
     .info-data{
         grid-template-areas:
-        'mssg-card1'
+        /* 'mssg-card1' */
         'mssg-card2'
         'mssg-card3';
     }
@@ -261,7 +264,7 @@ font-size: 150%;
       .under-container{
         margin: 2vh 0 2vh 0;
       }
-    .mssg-card1,
+    /* .mssg-card1, */
 .mssg-card2,
 .mssg-card3{
     height: 28vh;

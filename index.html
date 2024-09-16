@@ -15,31 +15,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="JavaScript/localization.js"></script>
     <title>Insucare</title>
 </head>
 
 <body>
-
-
-    <input type="radio" name="switchpage" id="p_1" checked >
+    <input type="radio" name="switchpage" id="p_1"checked>
     <input type="radio" name="switchpage" id="p_2" >
     <input type="radio" name="switchpage" id="p_3">
-    <!-- <input type="radio" name="switchpage" id="p_4"> -->
-    <!-- <input type="radio" name="switchpage" id="p_5"> -->
-    <!-- <input type="radio" name="switchpage" id="p_6"> -->
-    <input type="radio" name="switchpage" id="p_7" >
-    <input type="radio" name="switchpage" id="p_8"  >
+    <input type="radio" name="switchpage" id="p_7">
+    <input type="radio" name="switchpage" id="p_8">
 
     <div class="controls-page">
         <img class="logo" src="images/logo_black.png" alt="">
-        <label for="p_1">Home</label>
-        <label for="p_2">Isulin Pump</label>
-        <label for="p_3">About</label>
-        <!-- <label for="p_4">Values</label> -->
-        <!-- <label for="p_5">Teams</label> -->
-        <!-- <label for="p_6">Types</label> -->
-        <label for="p_7">Safety Steps</label>
-        <label for="p_8">Contact Us</label>
+        <label for="p_1" tr="home">Home</label>
+        <label for="p_2" tr="insulin_pump">Insulin Pump</label>
+        <label for="p_3" tr="about">About</label>
+        <label for="p_7" tr="Safety_steps">Safety Steps</label>
+        <label for="p_8" tr="contact_us">Contact Us</label>
+        <label  class="dropdown">    
+            <span tr="language">Language</span>
+            <ul class="dropdown-content">
+                <li>
+                    <input type="radio" name="lang_li" id="en" checked>
+                    <label id="en" for="en">English</label>
+                
+                </li>
+                <li>
+                    <input type="radio" name="lang_li" id="ar">
+                    <label id="ar" for="ar">العربية</label>
+                </li> 
+            </ul>
+        </label>
     </div>
 
     <div class="whole-page">
@@ -54,11 +61,11 @@
 
                 </div>
                 <div class="txt-container">
-                    <p class="animate__animated animate__fadeInDown meduim">We are here for you</p>
-                    <p class="animate__animated animate__fadeInDown large">What Makes You <br>Better, Makes <br>Us
+                    <p class="animate__animated animate__fadeInDown meduim" tr="we_are_here_for_you">We are here for you</p>
+                    <p class="animate__animated animate__fadeInDown large" tr="what_makes_u_better">What Makes You <br>Better, Makes <br>Us
                         Better.
                     </p>
-                    <p class="animate__animated animate__fadeInDown small">"Diabetes may be a part of your life, but it
+                    <p class="animate__animated animate__fadeInDown small" tr="diabetes_may">"Diabetes may be a part of your life, but it
                         doesn't
                         <br> define who you are. You define your journey."
                     </p>
@@ -72,7 +79,7 @@
             <input type="radio" name="switch" id="i_1" checked>
             <input type="radio" name="switch" id="i_2" >
             <input type="radio" name="switch" id="i_3"  >
-            <input type="radio" name="switch" id="i_4"  >
+            <input type="radio" name="switch" id="i_4">
             <div class="controls">
                 <label for="i_1" id="i_1">⬤</label><br>
                 <label for="i_2" id="i_2">⬤</label><br>
@@ -83,10 +90,10 @@
                 <div class="slide">
                     <div class="content content1">
                         <div class="side-txt">
-                            <span class="extra-large"> SAY "HI"</span> <br>
-                            <span class="large">Introducing The New Pumsulin<span
+                            <span class="extra-large" tr="say_hi"> SAY "HI"</span> <br>
+                            <span class="large" tr="Introducing_the_new">Introducing The New Pumsulin<span
                                     style="font-size: 50%; vertical-align: super; ">®</span><br></span><br>
-                            <span class="semi-meduim"> To our latest innovation, the pumsulin tubeless patch with
+                            <span class="semi-meduim" tr="to_our_latest_innovation"> To our latest innovation, the pumsulin tubeless patch with
                                 smartphone control.
                                 Enjoy complete freedom with our patch's compact design.
                                 Allow yourself to live your life without any worries.
@@ -99,37 +106,31 @@
                 <div class="slide">
                     <div class="content content2">
                         <div class="left-points">
-                            <p class="point">Tube-free <br>
-                            <span> small and lightweight so that you hardly know it is there. </span>
-                            </p> <br>
-                            <p class="point" style="animation-delay: 0.2s;">Easy to hide away <br> 
-                            <span>can be placed directly on the body with no tubes attached.</span>
-                        </p><br>
-                        <p class="point" style="animation-delay: 0.4s;">Reservoir <br>
-                            <span>for up to 300 units, lasts up to four days.</span> 
-                            </p>
+                            <p class="point" tr="tube_free" style="margin-top: 0;">Tube-free </p>
+                            <span class="point" tr="small_and_lightwight"> small and lightweight so that you hardly know it is there. </span>
+                            <br>
+                            <p class="point" style="animation-delay: 0.2s;" tr="easy_to_hide_away">Easy to hide away </p> 
+                            <span class="point" tr="can_be_placed">can be placed directly on the body with no tubes attached.</span>
+                        <br>
+                        <p class="point" style="animation-delay: 0.4s;" tr="reservoir">Reservoir </p>
+                            <span class="point" tr="for_up_to">for up to 300 units, lasts up to four days.</span>                         
                           <br>
-                           <p class="point" style="animation-delay: 0.6s;"> Lives by your rules <br> 
-                            <span>easily placed on different infusion sites and detectable when necessary.</span>
-                        </p>
+                           <p class="point" style="animation-delay: 0.6s;" tr="lives_by_your_rules"> Lives by your rules </p> 
+                            <span class="point" tr="easily_placed">easily placed on different infusion sites and detectable when necessary.</span>
                         </div>
                         <div class="mid-img">
                             <img src="images/structure.png" alt="">
                         </div>
                         <div class="right-points">
-                           <p class="point" style="animation-delay: 0.8s;"> Reusable <br>
-                            <span>high quality pump base.</span>
-                           </p>
-                            <p class="point" style="animation-delay: 1s;">Quick bolus 
-                            <br><span>buttons for direct bolus delivery to the pump.</span>
-                            </p>
-                            <p class="point" style="animation-delay: 1.2s;">Transparent <br>
-                                <span>reservoir for checking the insulin level and detecting air bubbles.</span>
-                                </p>
+                           <p class="point" style="animation-delay: 0.8s; margin-top: 0;" tr="reusable"> Reusable </p>
+                            <span tr="high_quality">high quality pump base.</span>
+                            <p class="point" style="animation-delay: 1s;" tr="quick_bolus">Quick bolus</p>
+                            <span tr="buttons_for_direct">buttons for direct bolus delivery to the pump.</span>
+                            <p class="point" style="animation-delay: 1.2s;" tr="transparent">Transparent </p>
+                            <span tr="reservoir_for_hecking">reservoir for checking the insulin level and detecting air bubbles.</span>
                            
-                            <p class="point" style="animation-delay: 1.4s;"> Discover modularity <br> 
-                                <span>replace just the disposables, not the pump.</span>
-                               </p>
+                            <p class="point" style="animation-delay: 1.4s;" tr="discover_modularity"> Discover modularity </p> 
+                            <span tr="replace_just">replace just the disposables, not the pump.</span>
                             
 
                         </div>
@@ -147,7 +148,7 @@
 
 
                         <div class="ground ">
-                            <div>
+                            <div tr="a_small_light_weight">
                             A small, light weight, tubeless patch that can be discreetly concealed, allowing you to live
                             life on your own terms.
                         </div>
@@ -157,19 +158,19 @@
                 <div class="slide">
                     <div class="content content4">
                         <div class="AIO">
-                            <span class="meduim">ALL IN</span>
-                            <span class="large">ONE</span> <br>
+                            <span class="meduim" tr="all_in">ALL IN</span>
+                            <span class="large" tr="one">ONE</span> <br>
                         </div>
                         <div class="AIO-img">
                             <img src="images/all-in-one.png" alt="">
                         </div>
-                        <div class="AIO-sub semi-meduim">
+                        <div class="AIO-sub semi-meduim" tr="our_solution_for_ultimate">
                             Our solution for Ultimate Convenience. <br>
                             Our all-in-one tubeless patch pump system comes with a wireless mobile
                             application connection, giving you a seamless experience.
 
                         </div>
-                        <div class="AIO-para small">
+                        <div class="AIO-para small" tr="starting_a_temporary_basal">
                             Starting a temporary basal rate or calculating a bolus can seem difficult,
                             but don’t worry, with the PUMSULIN® tubeless patch pump for extra possibilities
                             system you are not alone. It comes with a mobile application connection including bolus
@@ -197,24 +198,24 @@
                 <div class="card-story1">
                     <img class="right-img" src="images/medium-shot-father-holding-girl-shoulders.jpg" alt="">
                     <div class="left-txt">
-                        <span class="story">Our <span style="color: #00B2F5;">Story</span></span> <br>
+                        <span class="story" tr="our_story">Our <span style="color: #00B2F5;">Story</span></span> <br>
                         <div class="under-container-about">
                             <div class="contact-under-about"></div>
                             <div class="info-under-about"></div>
                         </div> <br>
-                        Insucare company is a locally owned company
-                        by Dr.Mina Tharwat (founder)
-                        and Dr.Sanaa Hossam (co-founder)
-                        the company's main products are insulin pumps.
+                        <p tr="insucare_is_an_egyptian_company">
+                        Insucare is an Egyptian Company Started in 2024 with a Mission to Make Patients 
+                        life better Specialized in Manufacturing Smart Medical Devices specifically for Diabetics Patient 
+                        Our first product is Pumsulin Device Which is an insulin Pump
                         Insulin pumps are devices that regulate insulin
                         and blood sugar. They offer people with diabetes
-                        a flexible option for diabetes management.
+                        a flexible option for diabetes management.</p>
                     </div>
                 </div>
 
 
                 <div class="card-story1">
-                    <div class="right-txt">
+                    <div class="right-txt" tr="we_seek_to_facilitate">
                         We seek to facilitate dealing with medical devices
                         such as insulin injections, by manufacturing
                         a device that helps the elderly and children inject
@@ -367,27 +368,27 @@
                 </div>
 
                 <div class="quote">
-                    <p class="animate__animated animate__fadeInDown text-quote">“Health is not <br>about the weight you
+                    <p class="animate__animated animate__fadeInDown text-quote" tr = "health_is_not">“Health is not <br>about the weight you
                         lose,
                         <br> but about <br>the life you gain”
                     </p>
 
                 </div>
                 <div style="background-color: #E8ECF8;">
-                    <h1 class="title_p7">Safety Steps</h1>
+                    <h1 class="title_p7" tr="safety_stes">Safety Steps</h1>
                     <div class="steps">
                         <div class="step1 step11">
                                 <img class="step-img" src="images/adjustment.png" alt="">
-                                <br><span class="subtitle">Adjusts</span><br>
-                                <span class="brief"> Makes precise adjustments of insulin delivery to help protect from
+                                <br><span class="subtitle" tr="adjusts">Adjusts</span><br>
+                                <span class="brief" tr="make_precise"> Makes precise adjustments of insulin delivery to help protect from
                                     highs and
                                     lows. <br></span>
 
                         </div>
                         <div class="step1 step12">
                                 <img class="step-img" src="images/shoes.png" alt="">
-                                <br><span class="subtitle">Exercise</span><br>
-                                <span class="brief">
+                                <br><span class="subtitle" tr="exercise">Exercise</span><br>
+                                <span class="brief" tr="freely_do_your">
                                     Freely do your exercises by changing your basal settings to exercise mode <br>
                                 </span>
 
@@ -395,8 +396,8 @@
 
                         <div class="step1 step13">
                                 <img class="step-img" src="images/fast-food.png" alt="">
-                                <br><span class="subtitle" >CI Ratio</span><br>
-                                <span class="brief" >
+                                <br><span class="subtitle" tr="ci_ratio">CI Ratio</span><br>
+                                <span class="brief" tr="by_one_click_choose" >
                                     By one click choose your meal from the food library and insulin bolus dose will be
                                     calculated <br>
                                 </span>
@@ -410,31 +411,19 @@
 
 
         <div class="page page8" id="page8">
-                <!-- <div class="mssg-contain"> -->
                 <div class="message">
-                    <!-- <div class="message-opacity"> -->
                         <img class="logo24 animate__animated animate__zoomIn" src="images/24-7.png" alt="">
-                        <span class="logo-txt animate__animated animate__fadeInDown">Our team is here for you, 24/7. Explore the resources and contact
+                        <span class="logo-txt animate__animated animate__fadeInDown" tr="our_team_is_here">Our team is here for you, 24/7. Explore the resources and contact
                             information below to
                             support your questions and product needs.</span>
-                    <!-- </div> -->
                 </div>
-            <!-- </div> -->
                 <div class="newDiv" >
-                    <span class="info-title animate__animated animate__fadeInDown"> Contact <span style="color: #00B2F5;">Info</span> </span>
+                    <span class="info-title animate__animated animate__fadeInDown" tr="contact_info"> Contact <span style="color: #00B2F5;">Info</span> </span>
                     <div class="under-container">
                         <div class="contact-under"></div>
                         <div class="info-under"></div>
                     </div>
                     <div class="info-data">
-
-                        <div class="mssg-card1">
-                            <img class="info-img head1" src="images/telephone.png" alt=""> <br>
-                            <span class="title1 title-in"> Phone</span> <br><br>
-                            <span class="info1 info-in">
-                            01117499658<br>01091153703
-                            </span>
-                        </div>
                         <div class="mssg-card2">
                             <img class="info-img head2" src="images/mail.png" alt=""> <br>
                             <span class="title2 title-in">Email </span><br> <br>
@@ -445,13 +434,11 @@
                         </div>
                         <div class="mssg-card3">
                             <img class="info-img head3" src="images/add-friend.png" alt=""> <br>
-                            <span class="title3 title-in">Follow Us </span><br> <br>
-                            <div class="social-media info3 ">
-                                <a class="comm-link1"
-                                    href="https://www.facebook.com/profile.php?id=100089595321786&mibextid=ZbWKwL">
+                            <span class="title3 title-in" tr="follow_us">Follow Us </span><br> <br>
+                            <div class="social-media ">
+                                <a class="comm-link1" href="https://www.facebook.com/profile.php?id=100089595321786&mibextid=ZbWKwL">
                                     <img class="comm-logo" src="images/facebook.png" alt=""></a>
-                                <a class="comm-link2" href=""><img class="comm-logo" src="images/linkedin.png"
-                                        alt=""></a>
+                                <a class="comm-link2" href=""><img class="comm-logo" src="images/linkedin.png"alt=""></a>
                             </div>
 
 
@@ -461,10 +448,10 @@
 
                 </div>
                 <div class="email-form">
-                    <span class="kit">Keep In Touch</span>
+                    <span class="kit" tr="keep_in_touch">Keep In Touch</span>
                     <form id="emailForm">
                         <input class="txt-input1" id="name" placeholder="Your Name" type="text" required> <br>
-                        <!-- <input class="txt-input2" id="email" placeholder="Your Email" type="text"> <br> -->
+                        <input class="txt-input2" id="phone" placeholder="Your Phone Number" type="text"> <br>
                         <textarea class="txt-input3" id="mssg" placeholder="Your Message" type="text" required></textarea> <br>
                         <button class="button-18" id="button" >SUBMIT</button>
 

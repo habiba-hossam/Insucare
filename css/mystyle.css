@@ -4,6 +4,26 @@ body {
     margin: 0;
 }
 
+/* languages */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 5px;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 1px;
+    z-index: 1;
+    list-style-type: none;
+    text-align: center;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 /* #p_1:checked ~ .whole-page .page1, */
 #p_2:checked ~ .whole-page .page2,

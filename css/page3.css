@@ -80,6 +80,7 @@
     font-weight: 300;
     text-align: left;
     opacity: 0;
+    text-align: justify;
   
  }
  .left-txt.active{
@@ -111,6 +112,7 @@
     font-weight: 300;
     text-align: left;
     opacity: 0;
+    text-align: justify;
  }
  .right-txt.active{
     animation-duration: 1s;

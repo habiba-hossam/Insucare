@@ -80,14 +80,14 @@ function revealScroll() {
     else if (isPage[4].checked)
     {
       var img = document.querySelector('.message');
-      var card1 = document.querySelector('.mssg-card1');
+      // var card1 = document.querySelector('.mssg-card1');
       var card2 = document.querySelector(".mssg-card2");
       var card3 = document.querySelector(".mssg-card3");
       var windowHeight = window.innerHeight;
       var elementTop = img.getBoundingClientRect().top;
       var elementVisible1 = 710;
       if (elementTop < windowHeight - elementVisible1) {
-         card1.classList.add("active");
+        //  card1.classList.add("active");
          card2.classList.add("active");
          card3.classList.add("active");
 
