@@ -1,15 +1,14 @@
 .page3 {
     position: relative;
-    padding: 7% 0 0 0;
-    opacity: 0;
-    display:none;
+    display:flex;
     flex-wrap: wrap;
+    padding-top: 13vh;
 }
 
 .child{
     margin-left: 2%;
-    width: 95vw;
-    height: 60vh;
+    width: 96vw;
+    height: 50vh;
 
 }
 .story{

@@ -142,13 +142,9 @@ const translations = {
 
 };
 
-// var local = 'en';
 window.addEventListener("change", () => {
   var lang = document.getElementsByName('lang_li');
-  // var local = "";
   if (lang[0].checked) {
-    // alert("English detected");
-    // local = "en";
     document.querySelector("link[href='css_ar/mystyle.css']").href = "css/mystyle.css";
     document.querySelector("link[href='css_ar/page1.css']").href = "css/page1.css";
     document.querySelector("link[href='css_ar/page2.css']").href = "css/page2.css";
@@ -164,8 +160,6 @@ window.addEventListener("change", () => {
     });
   }
   else {
-    // alert("arabic detected");
-    // local="ar";
     document.querySelector("link[href='css/mystyle.css']").href = "css_ar/mystyle.css";
     document.querySelector("link[href='css/page1.css']").href = "css_ar/page1.css";
     document.querySelector("link[href='css/page2.css']").href = "css_ar/page2.css";

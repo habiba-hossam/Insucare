@@ -20,30 +20,24 @@
 </head>
 
 <body>
-    <input type="radio" name="switchpage" id="p_1"checked>
-    <input type="radio" name="switchpage" id="p_2" >
-    <input type="radio" name="switchpage" id="p_3">
-    <input type="radio" name="switchpage" id="p_7">
-    <input type="radio" name="switchpage" id="p_8">
-
     <div class="controls-page">
         <img class="logo" src="images/logo_black.png" alt="">
-        <label for="p_1" tr="home">Home</label>
-        <label for="p_2" tr="insulin_pump">Insulin Pump</label>
-        <label for="p_3" tr="about">About</label>
-        <label for="p_7" tr="Safety_steps">Safety Steps</label>
-        <label for="p_8" tr="contact_us">Contact Us</label>
+        <a href="#page1" tr="home">Home</a>
+        <a href="#page2" tr="insulin_pump">Insulin Pump</a>
+        <a href="#page3" tr="about">About</a>
+        <a href="#page7" tr="Safety_steps">Safety Steps</a>
+        <a href="#page8" tr="contact_us">Contact Us</a>
         <label  class="dropdown">    
             <span tr="language">Language</span>
             <ul class="dropdown-content">
                 <li>
-                    <input type="radio" name="lang_li" id="en" checked>
-                    <label id="en" for="en">English</label>
+                    <input type="radio" name="lang_li" id="en">
+                    <label id="en" for="en"><img src="images/english.png" style="width: 20px; height: 20px; margin-right: 5px;">English</label>
                 
                 </li>
                 <li>
                     <input type="radio" name="lang_li" id="ar">
-                    <label id="ar" for="ar">العربية</label>
+                    <label id="ar" for="ar" checked><img src="images/arabic.png" style="width: 20px; height: 20px; margin-right: 30px;">العربية</label>
                 </li> 
             </ul>
         </label>
@@ -80,12 +74,6 @@
             <input type="radio" name="switch" id="i_2" >
             <input type="radio" name="switch" id="i_3"  >
             <input type="radio" name="switch" id="i_4">
-            <div class="controls">
-                <label for="i_1" id="i_1">⬤</label><br>
-                <label for="i_2" id="i_2">⬤</label><br>
-                <label for="i_3" id="i_3">⬤</label><br>
-                <label for="i_4" id="i_4">⬤</label><br>
-            </div>
             <div class="wrapper">
                 <div class="slide">
                     <div class="content content1">
@@ -134,11 +122,6 @@
                             
 
                         </div>
-
-
-
-
-
                     </div>
 
                 </div>
@@ -186,6 +169,13 @@
 
                     </div>
                 </div>
+            </div>
+
+            <div class="controls">
+                <label for="i_1" id="i_1">⬤</label><br>
+                <label for="i_2" id="i_2">⬤</label><br>
+                <label for="i_3" id="i_3">⬤</label><br>
+                <label for="i_4" id="i_4">⬤</label><br>
             </div>
 
         </div>
@@ -412,10 +402,13 @@
 
         <div class="page page8" id="page8">
                 <div class="message">
-                        <img class="logo24 animate__animated animate__zoomIn" src="images/24-7.png" alt="">
-                        <span class="logo-txt animate__animated animate__fadeInDown" tr="our_team_is_here">Our team is here for you, 24/7. Explore the resources and contact
+                    <img class="doctor-phone" src="images/doctor-phone.jpg">
+                    <div class="phone-mssg">
+                        <img class="logo24 animate__animated animate__zoomIn" src="images/24-7 blue.png" alt="">
+                        <span class="logo-txt animate__animated animate__fadeInDown" tr="our_team_is_here">Our team is here for you 24/7.<br>Explore the resources and contact
                             information below to
                             support your questions and product needs.</span>
+                    </div>
                 </div>
                 <div class="newDiv" >
                     <span class="info-title animate__animated animate__fadeInDown" tr="contact_info"> Contact <span style="color: #00B2F5;">Info</span> </span>
@@ -461,6 +454,7 @@
             </div>
 
     </div>
+    <footer></footer>
 </body>
 
 </html>

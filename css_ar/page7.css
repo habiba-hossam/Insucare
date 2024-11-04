@@ -25,9 +25,10 @@
 .page7 {
     position: relative;
     background-color: white;
-    opacity: 0;
-    display: none;
+    display: flex;
     padding-top: 7%;
+    width: 96vw;
+    margin: 0 2vw 0 2vw;
 }
 
 .quote {

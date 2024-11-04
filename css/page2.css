@@ -1,423 +1,410 @@
-
 input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    position: absolute;
-  }
-    
-  .wrapper {
-    width: 100vw;
-    display: flex;
-    background-color: white;
-    
-  }
-  
-  .slide {
-    width: 0;
-    
-  }
-  
-  .page2 {
-      background-color: white;
-      display: flex;
-      align-items: center; 
-      margin: 0;
-      padding: 0;
-      padding-top: 6vh;
-      opacity: 0;
-      display:none;
-  }
-  
-    .content {
-      width: 96vw;
-      height: 84vh;
-      box-sizing: border-box;
-      padding: 30px;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity .6s;
-      overflow-y: hidden;
-      margin: 9vh 2vw 0 2vw;
-      animation-delay: 16s;
-      animation-duration: 10s;
-
-      
-    }
-  
-  .content1{
-      background-color: #00B2F5;
-      display: flex;
-      position: relative;
-      align-items: center; 
-      justify-content: center;
-      animation-delay: 1s;
-
-   
-      
-  }
-  .content1 .side-img{
-      flex-basis: 50%;
-      display: inline-block;
-      width: 100%;
-      margin-left: 5%;
-  }
-  .content1 .side-img-img{
-    width: 50%;
-    animation-delay:  0.5s;
-  }
-  .content1 .side-img-img.active
-  {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: zoomIn;
-  }
-
-  .content1 .side-txt{
-      display: inline-block;
-      flex-basis: 40%;
-      text-align: left;
-      margin-left: 20vw;
-      animation-delay: 0.5s;
-
-  }
-  .content1 .side-txt.active
-  {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: fadeInDown;
-  }
-  .content1 .extra-large{
-          margin-top: 3vh;
-          margin-bottom: 0;
-          font-size: 6vw;
-          font-weight: 900;
-          animation-delay: 0.5s;
-          color: white;
-  
-  }
-  .content1 .large{
-      font-size: 3vw;
-      font-weight: 600;
-      animation-delay: 0.5s;
-      color: white;
-  
-  }
-  
-  .content1 .semi-meduim{
-      font-size: 1.4vw;
-      font-weight: 550;
-      animation-delay: 1s;
-      margin-bottom: 0;
-      color: white;
-  }
-  
-  /* -------------------- content 2 ---------------------------- */  
-  .content2{
-    display: grid;
-    text-align: left;
-    justify-items: center;
-    position: relative;
-    padding: 0;
-    padding-top: 10vh;
-    background-color: #E8ECF8;
-    grid-template-areas: 
-    'left-points mid-img right-points';    
-    }
-    .left-points {grid-area: left-points;}
-    .mid-img {grid-area: mid-img;}
-    .right-points{grid-area: right-points;}
-    .left-points{
-        margin-left: 10vw ;
-    }
-    .right-points{
-        margin-right: 10vw;
-        margin-left: 2vw;
-        
-    }
-    .mid-img img{
-      width: 40vw;
-     }
-    .left-points p
-    {
-        color: #00B2F5;
-        margin-top: 8vh;
-        margin-bottom: 0;
-        font-weight: 600;
-        font-size: 160%;
-    }
-    .left-points span,
-    .right-points span
-    {
-        color: black;
-        font-weight: 400;
-        font-size: 110%;
-    }
-    
-    .right-points p{
-        margin-bottom: 0;  
-        color: #00B2F5;
-        margin-top: 9vh;
-        font-weight: 600;
-        font-size: 160%; 
-    }
-    .point.active{
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        animation-name: fadeInUp;
-
-    }
-
-  /* -------------------- content 3 ---------------------------- */
-  .content3 {
-    background-color: #00B2F5;
-    position: relative;
-    align-items: center; 
-    justify-content: center;
-    padding: 0;
-    overflow: hidden;
-    display: flex;    
-  }
-  
-
-  .content3 .measures{
-      width: 80vw;
-      z-index: 10;
-      align-items: center;    
-  }
-
-  .content3 .measures.active{
-
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: zoomIn;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
 }
-  .content3 .ground{
-      width: 100vw;
-      display: inline-block;
-      text-align: center;
-      padding: 5%;
-      position: absolute;
-      z-index: 0;
-      top: 75%;
-      background-color: #E8ECF8;
-      font-size: 150%;
-  }
-  .content3 .ground.active{
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: fadeInUp;
-  }
-  /* -------------------- content 4 ---------------------------- */
 
-  .content4{
+.wrapper {
+  width: 90vw;
+  display: flex;
+}
+
+.slide {
+  width: 0;
+  justify-content: center;
+  align-content: center;
+}
+
+.page2 {
+  background-color: white;
+  display: grid;
+  grid-template-areas: 
+  'wrapper controls';
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.content {
+  width: 96vw;
+  height: 100vh;
+  box-sizing: border-box;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s;
+  overflow-y: hidden;
+  margin: 0 2vw 0 2vw;
+  padding-top: 7vh;
+  animation-delay: 16s;
+  animation-duration: 10s;
+}
+
+.content1 {
+  background-color: #00b2f5;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  animation-delay: 1s;
+}
+.content1 .side-img {
+  flex-basis: 50%;
+  display: inline-block;
+  width: 100%;
+  margin-left: 5%;
+}
+.content1 .side-img-img {
+  width: 50%;
+  animation-delay: 0.5s;
+}
+.content1 .side-img-img.active {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: zoomIn;
+}
+
+.content1 .side-txt {
+  display: inline-block;
+  flex-basis: 40%;
+  text-align: left;
+  margin-left: 20vw;
+  animation-delay: 0.5s;
+}
+.content1 .side-txt.active {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+}
+.content1 .extra-large {
+  margin-top: 3vh;
+  margin-bottom: 0;
+  font-size: 6vw;
+  font-weight: 900;
+  animation-delay: 0.5s;
+  color: white;
+}
+.content1 .large {
+  font-size: 3vw;
+  font-weight: 600;
+  animation-delay: 0.5s;
+  color: white;
+}
+
+.content1 .semi-meduim {
+  font-size: 1.4vw;
+  font-weight: 550;
+  animation-delay: 1s;
+  margin-bottom: 0;
+  color: white;
+}
+
+/* -------------------- content 2 ---------------------------- */
+.content2 {
+  display: grid;
+  text-align: left;
+  justify-items: center;
+  position: relative;
+  padding: 0;
+  padding-top: 20vh;
+  background-color: #e8ecf8;
+  grid-template-areas: "left-points mid-img right-points";
+}
+.left-points {
+  grid-area: left-points;
+}
+.mid-img {
+  grid-area: mid-img;
+}
+.right-points {
+  grid-area: right-points;
+}
+.left-points {
+  margin-left: 10vw;
+}
+.right-points {
+  margin-right: 10vw;
+  margin-left: 2vw;
+}
+.mid-img img {
+  width: 40vw;
+}
+.left-points p {
+  color: #00b2f5;
+  margin-top: 8vh;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 160%;
+}
+.left-points span,
+.right-points span {
+  color: black;
+  font-weight: 400;
+  font-size: 110%;
+}
+
+.right-points p {
+  margin-bottom: 0;
+  color: #00b2f5;
+  margin-top: 9vh;
+  font-weight: 600;
+  font-size: 160%;
+}
+.point.active {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+
+/* -------------------- content 3 ---------------------------- */
+.content3 {
+  background-color: #00b2f5;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+.content3 .measures {
+  width: 80vw;
+  z-index: 10;
+  align-items: center;
+}
+
+.content3 .measures.active {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: zoomIn;
+}
+.content3 .ground {
+  width: 100vw;
+  display: inline-block;
+  text-align: center;
+  padding: 5%;
+  position: absolute;
+  z-index: 0;
+  top: 75%;
+  background-color: #e8ecf8;
+  font-size: 150%;
+}
+.content3 .ground.active {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+/* -------------------- content 4 ---------------------------- */
+
+.content4 {
   display: grid;
   text-align: center;
   justify-items: center;
   position: relative;
-  padding: 0;
-  margin-top: 7vh;
-  grid-template-areas: 
-  'AIO'
-  'AIO-img'
-  'AIO-sub'
-  'AIO-para';
-  background-color: #E8ECF8;
-  
-  }
-  .AIO {grid-area: AIO;}
-  .AIO-img {grid-area: AIO-img;}
-  .AIO-sub {grid-area: AIO-sub;}
-  .AIO-para {grid-area: AIO-para;}
-.AIO-img img{
+  /* padding: 0; */
+  /* margin-top: 7vh; */
+  padding-top: 12vh;
+  grid-template-areas:
+    "AIO"
+    "AIO-img"
+    "AIO-sub"
+    "AIO-para";
+  background-color: #e8ecf8;
+}
+.AIO {
+  grid-area: AIO;
+}
+.AIO-img {
+  grid-area: AIO-img;
+}
+.AIO-sub {
+  grid-area: AIO-sub;
+}
+.AIO-para {
+  grid-area: AIO-para;
+}
+.AIO-img img {
   width: 30vw;
 }
-  .AIO-img.active{
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: zoomIn;
-    animation-delay: 0.5s;
-
-  }
-  .AIO.active{
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: fadeInDown;
-  }
-  .AIO-sub.active{
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: fadeInDown;
-    animation-delay: 1s;
-  }  
-  .AIO-para.active{
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: fadeInDown;
-    animation-delay: 1.5s;
-  }
-  .content4 .large{
-      margin-bottom: 0;
-      font-size: 600%;
-      font-weight: 900;
-      animation-delay: 0.5s;
-      color: #00B2F5;
-      width: 100%;
-  
-  }
-  
-  .content4 .meduim{
-      font-size: 300%;
-      font-weight: 550;
-      animation-delay: 1s;
-      margin-bottom: 0;
-  }
-  
-  .content4 .semi-meduim{
-      font-size: 200%;
-      font-weight: 600;
-      animation-delay: 1s;
-      margin-bottom: 0;
-      padding-left: 15vw;
-      padding-right: 15vw;
-  }
-  .content4 .small{
-      font-size: 120%;
-      font-weight: 400;
-      animation-delay: 1s;
-      margin-bottom: 5vh;
-      padding:2vh 15vw 5vh 15vw;
-  
-  }
-
-  
-  #i_1:checked ~ .wrapper .content1,
-  #i_2:checked ~ .wrapper .content2,
-  #i_3:checked ~ .wrapper .content3,
-  #i_4:checked ~ .wrapper .content4,
-  #i_5:checked ~ .wrapper .content5,
-  #i_6:checked ~ .wrapper .content6 {
-    opacity: 1;
-    pointer-events: auto;
+.AIO-img.active {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: zoomIn;
+  animation-delay: 0.5s;
 }
-  
-  
-  .controls{
-      position: fixed;
-      right: 0;
-      left: 95vw;
-      display: table;
-      z-index: 12;
-  
-  }
-  
-  .page2 label {
-    color: #E0E0E0;
-    cursor: pointer;
-  }
-  
-  #i_1:checked ~ .controls label[for="i_1"],
-  #i_2:checked ~ .controls label[for="i_2"],
-  #i_3:checked ~ .controls label[for="i_3"],
-  #i_4:checked ~ .controls label[for="i_4"],
-  #i_5:checked ~ .controls label[for="i_5"],
-  #i_6:checked ~ .controls label[for="i_6"] {
-    color: #424242;
-  }
+.AIO.active {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+}
+.AIO-sub.active {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 1s;
+}
+.AIO-para.active {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 1.5s;
+}
+.content4 .large {
+  margin-bottom: 0;
+  font-size: 600%;
+  font-weight: 900;
+  animation-delay: 0.5s;
+  color: #00b2f5;
+  width: 100%;
+}
 
+.content4 .meduim {
+  font-size: 300%;
+  font-weight: 550;
+  animation-delay: 1s;
+  margin-bottom: 0;
+}
 
+.content4 .semi-meduim {
+  font-size: 200%;
+  font-weight: 600;
+  animation-delay: 1s;
+  margin-bottom: 0;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+.content4 .small {
+  font-size: 120%;
+  font-weight: 400;
+  animation-delay: 1s;
+  margin-bottom: 5vh;
+  padding: 2vh 15vw 5vh 15vw;
+}
 
-  @media only screen and (max-width: 450px) {
-.controls{
+#i_1:checked ~ .wrapper .content1,
+#i_2:checked ~ .wrapper .content2,
+#i_3:checked ~ .wrapper .content3,
+#i_4:checked ~ .wrapper .content4,
+#i_5:checked ~ .wrapper .content5,
+#i_6:checked ~ .wrapper .content6 {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.controls {
+  /* position: fixed; */
+  /* right: 0; */
+  /* left: 95vw; */
+  display: table;
+  z-index: 12;
+}
+
+.page2 label {
+  color: #e0e0e0;
+  cursor: pointer;
+}
+
+#i_1:checked ~ .controls label[for="i_1"],
+#i_2:checked ~ .controls label[for="i_2"],
+#i_3:checked ~ .controls label[for="i_3"],
+#i_4:checked ~ .controls label[for="i_4"],
+#i_5:checked ~ .controls label[for="i_5"],
+#i_6:checked ~ .controls label[for="i_6"] {
+  color: #424242;
+}
+
+@media only screen and (max-width: 450px) {
+  .controls {
     visibility: hidden;
-}
-.wrapper{
+  }
+  .wrapper {
     display: block;
-}
-  
-.content {
-   margin-top: 0;
-   display: block;
-   height: auto;
-   opacity: 1;
-}
+  }
 
-.content1 .side-txt{
-    margin-left: 2vw;
-}
-.content1 .side-txt{
-    margin-left: 2vw;
-}
+  .content {
+    margin-top: 0;
+    display: block;
+    height: auto;
+    opacity: 1;
+  }
 
-.content1 .extra-large{
+  .content1 .side-txt {
+    margin-left: 2vw;
+  }
+  .content1 .side-txt {
+    margin-left: 2vw;
+  }
+
+  .content1 .extra-large {
     font-size: 15vw;
-}
-.content1 .large{
-font-size: 8vw;
-}
+  }
+  .content1 .large {
+    font-size: 8vw;
+  }
 
-.content1 .semi-meduim{
-font-size: 5vw;
-}
+  .content1 .semi-meduim {
+    font-size: 5vw;
+  }
 
-.content1 .side-img{
+  .content1 .side-img {
     margin-top: 5vh;
     margin-left: 20vw;
     width: 50vw;
-}
-.content1 .side-img-img{
+  }
+  .content1 .side-img-img {
     width: 50vw;
   }
   /* -------------------------------content2------------------------------------- */
-  .content2{
+  .content2 {
     display: grid;
-    grid-template-areas: 
-    'mid-img'
-    'left-points'
-    'right-points';   
+    grid-template-areas:
+      "mid-img"
+      "left-points"
+      "right-points";
   }
 
-.right-points,
-.left-points{
+  .right-points,
+  .left-points {
     margin: 0 10vw 2vh 10vw;
-    
-}
-.mid-img img{
- width: 70vw;
- margin-bottom: 5vh;
-}
-  /* -------------------------------content3------------------------------------- */
-  .content3 .measures{
-      width: 95vw;
   }
-  .content3 .ground{
-      top: 75%;
-      font-size: 75%;
-      width: 90vw;
-      right: 0;
-      background-color: white;
+  .mid-img img {
+    width: 70vw;
+    margin-bottom: 5vh;
+  }
+  /* -------------------------------content3------------------------------------- */
+  .content3 .measures {
+    width: 95vw;
+  }
+  .content3 .ground {
+    top: 75%;
+    font-size: 75%;
+    width: 90vw;
+    right: 0;
+    background-color: white;
   }
   /* -------------------------------content4------------------------------------- */
-  .content4{
+  .content4 {
     padding-top: 2vh;
   }
-    .content4 .large{
-        font-size: 500%;    
-    }
-    
-    .content4 .meduim{
-        font-size: 250%;
-    }
-    
-    .content4 .semi-meduim{
-        font-size: 130%;
-    }
-    .content4 .small{
-        font-size: 90%;    
-    }
-    .AIO-img img{
-      width: 80vw;
-      padding-top: 2vh;
-      padding-bottom: 2vh;
-    }
+  .content4 .large {
+    font-size: 500%;
   }
+
+  .content4 .meduim {
+    font-size: 250%;
+  }
+
+  .content4 .semi-meduim {
+    font-size: 130%;
+  }
+  .content4 .small {
+    font-size: 90%;
+  }
+  .AIO-img img {
+    width: 80vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+}
